@@ -26,7 +26,7 @@ Aplicación que permite gestionar usuarios mediante operaciones CRUD (Create, Re
 crud-python/
 ├── main.py                      # Aplicación consola con menú CRUD
 ├── models/
-│   ├── __init__.py
+│   ├── __pycache__
 │   ├── conectar.py             # Clase de conexión a MySQL
 │   └── DAO.py                  # Data Access Object con operaciones CRUD
 ├── crud_project/               # Proyecto Django
