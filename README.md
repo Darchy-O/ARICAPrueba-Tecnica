@@ -164,7 +164,7 @@ DATABASES = {
    -  **Resultado: Éxito**
 
 3. **DAO - Data Access Object (`DAO.py`):**
-   - Creé clase `UsuarioDAO` con ayuda de IA Claude
+   - Creé clase `UsuarioDAO` con ayuda MIXTA de IA Claude
    - Implementé operaciones:
      - `crear()` - INSERT
      - `listar_todos()` - SELECT *
@@ -184,7 +184,7 @@ DATABASES = {
    - ✅ **Resultado: Éxito**
 
 4. **Menú interactivo (`main.py`):**
-   - Desarrollé con ayuda de Claude y conocimiento propio
+   - Desarrollé con ayuda MIXTA de Claude y conocimiento propio
    - Implementé menú con 6 opciones:
      1. Crear usuario
      2. Listar usuarios
@@ -213,7 +213,7 @@ DATABASES = {
    - Agregué `'usuarios'` en `INSTALLED_APPS`
    - Actualicé `DATABASES` para conectar a MySQL:
    
-   **¿Por qué? (Pregunta IA)** Django por defecto usa SQLite. Como ya tenía una base de datos MySQL existente llamada "personal" con la tabla "usuario", necesité configurar Django para que usara esa base de datos en lugar de crear una nueva.
+   **¿Por qué? ** Django por defecto usa SQLite. Como ya tenía una base de datos MySQL existente llamada "personal" con la tabla "usuario", necesité configurar Django para que usara esa base de datos en lugar de crear una nueva.
 
 4. **Modelo (`models.py`):**
    - Creé clase `Usuario` conectada a tabla existente
@@ -228,14 +228,14 @@ DATABASES = {
      - `eliminar_usuario()`
 
 6. **URLs:**
-   - Creé `usuarios/urls.py` con ayuda de Claude
-   - Actualicé `crud_project/urls.py` agregando `include`
+   - Creé `usuarios/urls.py` con ayuda MIXTA de Claude
+   - Actualicé `crud_project/urls.py`
    
    **¿Por qué? (PREGUNTA IA)** Django necesita saber qué hacer cuando un usuario visita una URL. El archivo `crud_project/urls.py` es el punto de entrada principal, y `usuarios/urls.py` define las rutas específicas de la aplicación. En estos campos se agregó `include` y las rutas a mostrar. Sin esto, Django no sabría qué vista ejecutar para cada URL.
 
 7. **Templates:**
    - Creé carpeta: `mkdir -p usuarios/templates`
-   - Creé archivos HTML básicos:
+   - Dentro,creé archivos HTML básicos:
      - `listar.html` - Tabla con todos los usuarios
      - `crear.html` - Formulario de creación
      - `actualizar.html` - Formulario de edición
@@ -250,7 +250,7 @@ DATABASES = {
 
 1. Borré contraseñas de archivos antes de subir
 2. Subí proyecto a GitHub
-3. Agregué colaborador `emiliog-1985`
+3. Agregué colaborador
 
 ---
 
@@ -368,7 +368,7 @@ python manage.py runserver
 
 Ismael
 
-**Fecha:** 2 de Diciembre, 2024
+**Fecha:** 2 de Diciembre, 2025
 
 **Institución:** ARICA - Prueba Técnica
 
