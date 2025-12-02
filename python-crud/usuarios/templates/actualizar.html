@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Actualizar Usuario</title>
+</head>
+<body>
+    <h1>Actualizar Usuario</h1>
+    
+    <form method="POST">
+        {% csrf_token %}
+        <p>RUT: <input type="text" name="rut" value="{{ usuario.Rut }}" required></p>
+        <p>Nombre: <input type="text" name="nombre" value="{{ usuario.Nombre }}" required></p>
+        <p>Apellido: <input type="text" name="apellido" value="{{ usuario.Apellido }}" required></p>
+        <button type="submit">Guardar</button>
+        <a href="/">Cancelar</a>
+    </form>
+</body>
+</html>

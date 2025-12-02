@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Listar Usuarios</title>
+</head>
+<body>
+    <h1>Lista de Usuarios</h1>
+    
+    <a href="/crear/">Crear Nuevo</a>
+    
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>RUT</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Acciones</th>
+        </tr>
+        {% for u in usuarios %}
+        <tr>
+            <td>{{ u.Id_user }}</td>
+            <td>{{ u.Rut }}</td>
+            <td>{{ u.Nombre }}</td>
+            <td>{{ u.Apellido }}</td>
+            <td>
+                <a href="/actualizar/{{ u.Id_user }}/">Editar</a>
+                <a href="/eliminar/{{ u.Id_user }}/">Eliminar</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

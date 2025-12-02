@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eliminar Usuario</title>
+</head>
+<body>
+    <h1>Eliminar Usuario</h1>
+    
+    <p>¿Seguro que quieres eliminar a {{ usuario.Nombre }} {{ usuario.Apellido }}?</p>
+    
+    <form method="POST">
+        {% csrf_token %}
+        <button type="submit">Sí, Eliminar</button>
+        <a href="/">No, Cancelar</a>
+    </form>
+</body>
+</html>
